@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/images"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/mot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hai"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/hai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ba"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/thu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thu2"
+        android:layout_toRightOf="@+id/mot"
+        android:thumb="@drawable/thu1" />
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/thu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thu3"
+        android:layout_toRightOf="@+id/hai"
+        android:thumb="@drawable/thu2" />
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/thu3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ba"
+        android:thumb="@drawable/thu3" />
+
+
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hinh"
+        android:layout_width="150dp"
+        android:layout_height="90dp" />
+    <TextView
+        android:id="@+id/hinh100"
+        android:textStyle="bold"
+        android:textColor="#9b2750"
+        android:textSize="50sp"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/mot"
+        android:layout_alignStart="@+id/mot" />
+
+    <ImageButton
+
+        android:id="@+id/buttonplay"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
